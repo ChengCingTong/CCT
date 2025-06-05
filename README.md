@@ -3,82 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate to Our Mission</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Make a Donation</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
     }
     .container {
-      max-width: 600px;
-      margin: 60px auto;
-      background-color: #ffffff;
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: white;
       padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     }
     h1 {
       text-align: center;
-      font-weight: 600;
-      color: #1f2937;
+      font-size: 28px;
+      color: #333;
       margin-bottom: 30px;
     }
     .form-group {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     label {
+      font-weight: bold;
       display: block;
       margin-bottom: 8px;
-      font-weight: 600;
-      color: #374151;
+      color: #222;
     }
-    input, select, button {
+    input, select {
       width: 100%;
       padding: 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-    input:focus, select:focus {
-      border-color: #2563eb;
-      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
     }
     button {
-      background-color: #2563eb;
-      color: white;
+      width: 100%;
+      padding: 14px;
+      background-color: #0066cc;
       border: none;
-      font-weight: 600;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
     }
     button:hover {
-      background-color: #1d4ed8;
+      background-color: #004c99;
     }
-    .note {
-      font-size: 15px;
-      color: #374151;
+    .payment-info {
       margin-top: 30px;
+      font-size: 15px;
+      color: #444;
       line-height: 1.6;
     }
-    .note strong {
-      color: #111827;
+    .payment-info strong {
+      display: block;
+      margin-top: 15px;
+      color: #000;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Support Our Mission</h1>
+    <h1>Make a Donation</h1>
     <form action="#" method="POST">
       <div class="form-group">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group">
@@ -88,27 +87,28 @@
       <div class="form-group">
         <label for="purpose">Donation Purpose</label>
         <select id="purpose" name="purpose">
-          <option value="general">General Fund</option>
-          <option value="education">Education</option>
-          <option value="health">Health</option>
+          <option value="general">General Support</option>
+          <option value="temple">Temple Fund</option>
+          <option value="charity">Charity Project</option>
         </select>
       </div>
-      <button type="submit">Donate Now</button>
+      <button type="submit">Donate</button>
     </form>
 
-    <div class="note">
-      <p><strong>PayPal:</strong> <a href="mailto:yourpaypal@email.com">yourpaypal@email.com</a></p>
-      <p><strong>Wise:</strong><br>
-        Account name: Your Name<br>
-        Currency: USD / GBP / MYR<br>
-        Email: yourwise@email.com
-      </p>
-      <p><strong>Bank Transfer:</strong><br>
-        Bank: Your Bank Name<br>
-        Account Number: 12345678<br>
-        SWIFT: ABCDGB2L<br>
-        Country: United Kingdom
-      </p>
+    <div class="payment-info">
+      <strong>PayPal</strong>
+      Send donations to: <a href="mailto:yourpaypal@email.com">yourpaypal@email.com</a>
+
+      <strong>Wise</strong>
+      Account Name: Your Name<br>
+      Currency: USD / GBP / MYR<br>
+      Email: yourwise@email.com
+
+      <strong>Bank Transfer</strong>
+      Bank Name: Your Bank Name<br>
+      Account Number: 12345678<br>
+      SWIFT Code: ABCDGB2L<br>
+      Country: United Kingdom
     </div>
   </div>
 </body>
